@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "069E Workbench Runtime Preview Bridge",
+  "type": "object",
+  "required": [
+    "version",
+    "object_type",
+    "source",
+    "response_policy",
+    "bridge_status",
+    "final_next_action",
+    "view_model",
+    "trace_panel",
+    "collapse_state",
+    "dom_plan",
+    "candidate_only",
+    "teacher_review_required",
+    "safety"
+  ],
+  "properties": {
+    "version": {"const": "069E_runtime_preview_bridge_v1"},
+    "object_type": {"const": "workbench_runtime_preview_bridge"},
+    "source": {
+      "type": "object",
+      "required": [
+        "dry_run_only",
+        "controlled_preview_response",
+        "runtime_response_consumed",
+        "runtime_attached",
+        "streaming_attached",
+        "ui_auto_render",
+        "openclaw_raw_used",
+        "model_assisted",
+        "teacher_visible_only",
+        "chain_of_thought_exposed"
+      ],
+      "properties": {
+        "dry_run_only": {"const": true},
+        "controlled_preview_response": {"const": true},
+        "runtime_response_consumed": {"const": true},
+        "runtime_attached": {"const": false},
+        "streaming_attached": {"const": false},
+        "ui_auto_render": {"const": false},
+        "openclaw_raw_used": {"const": false},
+        "model_assisted": {"const": false},
+        "teacher_visible_only": {"const": true},
+        "chain_of_thought_exposed": {"const": false}
+      }
+    },
+    "response_policy": {
+      "type": "object",
+      "required": [
+        "accepted_response_type",
+        "preview_only",
+        "candidate_only",
+        "teacher_review_required",
+        "unsafe_response_blocked",
+        "unsafe_reason_codes"
+      ],
+      "properties": {
+        "accepted_response_type": {"const": "preview_response"},
+        "preview_only": {"const": true},
+        "candidate_only": {"const": true},
+        "teacher_review_required": {"const": true},
+        "unsafe_response_blocked": {"type": "boolean"},
+        "unsafe_reason_codes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "bridge_status": {"type": "string"},
+    "final_next_action": {
+      "enum": ["ask_question", "revise_candidate", "allow_preview_candidate", "block", "wait_for_teacher", "handoff_later_not_enabled"]
+    },
+    "view_model": {"type": "object"},
+    "trace_panel": {"type": "object"},
+    "collapse_state": {"type": "object"},
+    "dom_plan": {
+      "type": "object",
+      "required": ["auto_render", "explicit_render_only", "render_target_ids"],
+      "properties": {
+        "auto_render": {"const": false},
+        "explicit_render_only": {"const": true},
+        "render_target_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "candidate_only": {"const": true},
+    "teacher_review_required": {"const": true},
+    "safety": {
+      "type": "object",
+      "required": [
+        "write_allowed",
+        "feishu_write_allowed",
+        "database_write_allowed",
+        "knowledge_base_write_allowed",
+        "formal_scoring_allowed",
+        "real_export_allowed",
+        "runtime_attached_to_openclaw_raw"
+      ],
+      "properties": {
+        "write_allowed": {"const": false},
+        "feishu_write_allowed": {"const": false},
+        "database_write_allowed": {"const": false},
+        "knowledge_base_write_allowed": {"const": false},
+        "formal_scoring_allowed": {"const": false},
+        "real_export_allowed": {"const": false},
+        "runtime_attached_to_openclaw_raw": {"const": false}
+      }
+    }
+  },
+  "additionalProperties": true
+}

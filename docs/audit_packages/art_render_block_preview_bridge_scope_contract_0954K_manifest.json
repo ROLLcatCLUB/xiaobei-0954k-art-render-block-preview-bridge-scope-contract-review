@@ -1,0 +1,101 @@
+{
+  "stage_id": "0954K_ART_RENDER_BLOCK_PREVIEW_BRIDGE_SCOPE_CONTRACT",
+  "package_type": "github_review_audit_package",
+  "final_status": "ART_RENDER_BLOCK_PREVIEW_BRIDGE_SCOPE_CONTRACT_PASS",
+  "recommended_next_stage": "0954L_ART_RENDER_BLOCK_PREVIEW_BRIDGE_APPLY_CONTRACT_OR_GATE",
+  "zip_path": "docs/audit_packages/art_render_block_preview_bridge_scope_contract_0954K.zip",
+  "zip_self_entry_count": 18,
+  "self_reference_policy": "manifest entry uses SELF_REFERENTIAL_MANIFEST; validator checks zip/manifest strictly, path safety, forbidden file patterns, and text worktree newline equivalence",
+  "files": [
+    {
+      "path": "docs/foundation/art_render_block_preview_bridge_scope_contract_0954K.md",
+      "sha256": "f41bdb15f9903b437ed210a5794998733ccc8e56953f66225d8aafcb45a2e968",
+      "size_bytes": 3256
+    },
+    {
+      "path": "docs/foundation/art_render_block_preview_bridge_scope_contract_0954K.json",
+      "sha256": "c5aaa506b68b530ace0e0ea4e9913f33e52b219e9ed7e37aab6423d5138f992f",
+      "size_bytes": 3795
+    },
+    {
+      "path": "docs/audit/art_render_block_preview_bridge_scope_contract_0954K_report.md",
+      "sha256": "ab7a6d30da8a4bbccf53c2842ed88b95fbf2da3b92fdd08d7b7fe8bb4d146a07",
+      "size_bytes": 2226
+    },
+    {
+      "path": "scripts/validate_art_render_block_preview_bridge_scope_contract_0954K.py",
+      "sha256": "a35efee50ab96712bab167cbbfe4e38f7b5d79235fad14426883b34410bc36d6",
+      "size_bytes": 14583
+    },
+    {
+      "path": "docs/audit_packages/art_render_block_preview_bridge_scope_contract_0954K_manifest.json",
+      "sha256": "SELF_REFERENTIAL_MANIFEST",
+      "size_bytes": -1
+    },
+    {
+      "path": "docs/audit/legacy_card_updates_to_art_render_block_inactive_seal_0954J_result.json",
+      "sha256": "2a6cb1b0432f5216ff62b47b7b946b0a143c22cf051e3dea3bc2411e36bca798",
+      "size_bytes": 1816
+    },
+    {
+      "path": "docs/audit/legacy_card_updates_to_art_render_block_inactive_seal_0954J_report.md",
+      "sha256": "569cb8cefdf7c4864b5bc4045c38a902014a2037ddfd1d256d75b27a07f07e82",
+      "size_bytes": 2283
+    },
+    {
+      "path": "docs/audit_packages/legacy_card_updates_to_art_render_block_inactive_seal_0954J_manifest.json",
+      "sha256": "bb124899cdb779e475d0f8aeba85ce84a05ad241f6922af4fa3d07a3f1f3e34f",
+      "size_bytes": 4208
+    },
+    {
+      "path": "compatibility/card_updates/legacy_card_updates_art_render_block_inactive_apply_0954H.json",
+      "sha256": "7fc296684895fcf8b815e2bc618bddd7d77b4b50a8af423c06b324e0a0f2c12b",
+      "size_bytes": 41603
+    },
+    {
+      "path": "docs/audit/legacy_card_updates_to_art_render_block_inactive_smoke_0954I_result.json",
+      "sha256": "d4be3ebabfdb881497a0d552fe8537340d64514d69b83f9d59abf103377f8e04",
+      "size_bytes": 1631
+    },
+    {
+      "path": "platform_core/render_blocks/render_block_type_schema_0954C.json",
+      "sha256": "5362677528b18134e717b3c242b7d51f4233c83ce722402702ad41ceb913e7cc",
+      "size_bytes": 2524
+    },
+    {
+      "path": "subject_packs/art/topic_contexts/qinglv_china_color_topic_context_0954E.json",
+      "sha256": "d191f56c9cf7473780526c525d297d001fd394a79b5f475244ad2bdd0050b173",
+      "size_bytes": 722
+    },
+    {
+      "path": "frontend/workbench/fixtures/agent_output_existing_workbench_fixture_0952F_R1.js",
+      "sha256": "bf7d61c84e52ab54688c3c4a84395608d49539c831fdc2fb66712a11d1222632",
+      "size_bytes": 6610
+    },
+    {
+      "path": "frontend/workbench/fixtures/provider_candidate_patch_0952G_R1.js",
+      "sha256": "57d07fffb0932a740a856024a77cce34b8b5fc9ff9490c2ca9b6a5193e3b3d11",
+      "size_bytes": 2533
+    },
+    {
+      "path": "docs/contracts/workbench_runtime_preview_bridge_069E.schema.json",
+      "sha256": "809017fc2a1301dcc4c0fe4c769ce31825012c02bb89ccdf4df872c715a9b3f3",
+      "size_bytes": 3575
+    },
+    {
+      "path": "docs/frontend_experience/workbench_runtime_preview_bridge_069E_report.md",
+      "sha256": "f05419e9fa4e5162dec686f68366b73fa539fccfb07d069f7249032b53579e21",
+      "size_bytes": 1819
+    },
+    {
+      "path": "docs/frontend_experience/workbench_preview_viewmodel_contract_071A.md",
+      "sha256": "a69e86b4438aa4595914a3efdba7c7bcf4e6f62e537bf13ff3845f17b07de49e",
+      "size_bytes": 7143
+    },
+    {
+      "path": "docs/frontend_experience/workbench_preview_viewmodel_builder_071B.md",
+      "sha256": "eb6fb4c30ec20831f8de69b6e342300f1d56bafd4fa82fd6eb98781aba41cf76",
+      "size_bytes": 5256
+    }
+  ]
+}
